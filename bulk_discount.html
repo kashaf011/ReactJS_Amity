@@ -1,0 +1,97 @@
+//Bulk Discount using JavaScript Functions - DECLARATION ,EXPRESSION ,ARROW FUNCTION
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bulk Discount using JavaScript Function</title>
+</head>
+<body>
+
+  <script>
+    function total_cost(quantity) {
+      let price = 100;
+      let total = quantity * price;
+
+      if (quantity > 10) {
+        let discount = total * 0.10;
+        total = total - discount;
+        console.log("Total cost:", total);
+        console.log("Discount applied.");
+      } else {
+        console.log("Total cost:", total);
+        console.log("No discount applied.");
+      }
+    }
+
+    total_cost(11);
+  </script>
+
+</body>
+</html>
+
+
+
+//using function expression-
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bulk Discount - Function Expression</title>
+</head>
+<body>
+
+  <script>
+    const total_cost1 = function(quantity) {
+      let price = 100;
+      let total = quantity * price;
+
+      if (quantity > 10) {
+        let discount = total * 0.10;
+        total = total - discount;
+        console.log("Total cost:", total);
+        console.log("Discount applied.");
+      } else {
+        console.log("Total cost:", total);
+        console.log("No discount applied.");
+      }
+    };
+
+    total_cost1(8);
+  </script>
+
+</body>
+</html>
+
+
+
+
+//using arrow function-
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bulk Discount - Arrow Function</title>
+</head>
+<body>
+
+  <script>
+    const total_cost2 = (quantity) => {
+      let price = 100;
+      let total = quantity * price;
+
+      if (quantity > 10) {
+        let discount = total * 0.10;
+        total = total - discount;
+        console.log("Total cost:", total);
+        console.log("Discount applied.");
+      } else {
+        console.log("Total cost:", total);
+        console.log("No discount applied.");
+      }
+    };
+
+    total_cost2(15);
+  </script>
+
+</body>
+</html>
